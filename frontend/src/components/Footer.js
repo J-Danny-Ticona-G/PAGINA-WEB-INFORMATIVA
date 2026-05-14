@@ -4,20 +4,11 @@ const Footer = () => {
     return (
         <footer className="main-footer">
             <div className="footer-links">
-                <a href="/">Privacidad</a>
-                <a href="/">Términos de Uso</a>
-                {/* Enlace oficial a tu universidad */}
-                <a 
-                    href="https://www.usalesiana.edu.bo/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                >
-                    Universidad Salesiana
-                </a>
+                <span>Privacidad</span>
+                <span>Términos de Uso</span>
+                <span style={{color: '#d4af37'}}>Universidad Salesiana</span>
             </div>
-            <div className="footer-bottom">
-                <p>© 2026 Plataforma de Gestión Cultural - Juan Daniel Ticona Gutierrez</p>
-            </div>
+            <p>© 2026 Plataforma de Gestión Cultural - Juan Daniel Ticona Gutierrez</p>
         </footer>
     );
 };
