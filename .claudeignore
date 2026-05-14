@@ -1,0 +1,16 @@
+# Archivos pesados que NO quiero enviar a Claude
+node_modules/
+backend/
+dist/
+build/
+
+# Archivos de configuración innecesarios
+package-lock.json
+yarn.lock
+.env
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+.git/
