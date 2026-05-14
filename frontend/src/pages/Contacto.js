@@ -2,22 +2,32 @@ import React from 'react';
 
 const Contacto = () => {
     return (
-        <div className="container" style={{ textAlign: 'center', padding: '100px 20px' }}>
-            <div className="card" style={{ maxWidth: '600px', margin: '0 auto', padding: '40px' }}>
-                <h1 style={{ color: '#e74c3c' }}>Contacto del Desarrollador</h1>
-                <p style={{ fontSize: '1.2rem', marginBottom: '20px' }}>
-                    <strong>Juan Daniel Ticona Gutierrez</strong><br />
+        <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '70vh' }}>
+            <div className="card" style={{ maxWidth: '600px', padding: '40px', textAlign: 'center' }}>
+                <h2 style={{ color: 'var(--accent-coral)', fontFamily: 'Playfair Display, serif', fontSize: '2.5rem', marginBottom: '10px' }}>
+                    Contacto del Desarrollador
+                </h2>
+                <h3 style={{ color: 'var(--primary-color)', marginBottom: '5px' }}>Juan Daniel Ticona Gutierrez</h3>
+                <p style={{ color: 'var(--secondary-color)', fontWeight: '600', marginBottom: '30px' }}>
                     Estudiante de Ingeniería de Sistemas - USB
                 </p>
-                <div style={{ textAlign: 'left', display: 'inline-block' }}>
-                    <p>📧 <strong>Correo:</strong> ticonagutierrezjuandaniel@gmail.com</p>
-                    <p>📱 <strong>WhatsApp:</strong> +519 63213392</p>
-                    <p>📍 <strong>Ubicación:</strong> La Paz, Bolivia</p>
+
+                <div style={{ textAlign: 'left', display: 'inline-block', color: 'var(--primary-color)' }}>
+                    <p style={{ marginBottom: '15px' }}>
+                        <span style={{ color: 'var(--accent-gold)' }}>📧 Correo:</span> ticonagutierrezjuandaniel@gmail.com
+                    </p>
+                    <p style={{ marginBottom: '15px' }}>
+                        <span style={{ color: 'var(--accent-gold)' }}>📱 WhatsApp:</span> +591 63213392
+                    </p>
+                    <p style={{ marginBottom: '15px' }}>
+                        <span style={{ color: 'var(--accent-gold)' }}>📍 Ubicación:</span> La Paz, Bolivia
+                    </p>
                 </div>
+
                 <div style={{ marginTop: '30px' }}>
-                    <a href="https://wa.me/51963213392" target="_blank" rel="noopener noreferrer" className="btn-contact" style={{
-                        background: '#25d366', color: 'white', padding: '10px 20px', borderRadius: '5px', textDecoration: 'none'
-                    }}>Enviar mensaje directo</a>
+                    <a href="mailto:ticonagutierrezjuandaniel@gmail.com" className="btn-main" style={{ display: 'block', textAlign: 'center' }}>
+                        Enviar mensaje directo
+                    </a>
                 </div>
             </div>
         </div>
