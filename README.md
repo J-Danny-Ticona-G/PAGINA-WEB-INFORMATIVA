@@ -58,3 +58,50 @@ El sistema separa las vistas públicas de las administrativas mediante un protoc
 **Postulante:** Juan Daniel Ticona Gutierrez  
 **Carrera:** Ingeniería de Sistemas - Universidad Salesiana de Bolivia  
 **Gestión:** 2026
+
+## Requisitos previos para hacer correr (PARA LA REVISION)
+
+### Opción  — Con Docker 
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado
+- Git
+
+### Opción  — Docker (una sola vez)
+
+# 1. Clonar el repositorio
+opcion 1: git clone https://github.com/J-Danny-Ticona-G/PAGINA-WEB-INFORMATIVA.git
+opcion 2: tambien se subio toda la carpeta del proyecto comprimido, descomprimir y seguir con los pasos
+
+# 2. Levantar todo el sistema
+dentro de la carpeta principal abrir git y ejecutar el siguiente comando
+
+docker-compose up --build
+
+# 3. Esperar ~2 minutos mientras se construye y luego abrir:
+#    http://localhost:3000
+
+### Opcion - .ZIP
+
+# 1. Descomprimir el archivo .zip
+
+descomprimir en el escritorio con winrar
+
+# 2. Abrir con VS code
+
+- Abrir la carpeta y en la direccion poner:
+
+cmd
+
+- Se abrira la terminal, ahi poner el comando 
+
+code .
+
+(se abrira el proyecto en vscode)
+
+# 3. Correr el proyecto
+
+- abrir la terminar del VScode y poner esto en la terminal
+
+docker-compose up --build
+
+# 3. Esperar ~2 minutos mientras se construye y luego abrir:
+#    http://localhost:3000
