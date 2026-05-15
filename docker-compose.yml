@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # SERVICIO DE BASE DE DATOS
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: juanticona1999
+      POSTGRES_DB: cultura_lapaz
+    ports:
+      - "5432:5432"
+
+  # SERVICIO DEL BACKEND
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      # NOTA: Aquí el host no es localhost, es 'db'
+      DATABASE_URL: postgres://postgres:juanticona1999@db:5432/cultura_lapaz
+
+  # SERVICIO DEL FRONTEND
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
