@@ -2,7 +2,7 @@ const app = require('./src/app');
 
 const PORT = 5000;
 
-// Este bloque es el que evita que el proceso se cierre solo
+// Inicialización oficial de la escucha del servidor Express
 app.listen(PORT, () => {
     console.log('==============================================');
     console.log(`🚀 SERVIDOR ESCUCHANDO EN EL PUERTO ${PORT}`);
